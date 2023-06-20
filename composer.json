@@ -1,0 +1,41 @@
+{
+    "name":        "wmdk/wmdktracking",
+    "version":     "0.0.1",
+    "description": "KUSSIN | GTM Basic Integrator for OXID eShop 4.10.x",
+    "type":        "oxideshop-module",
+    "keywords":    [
+        "oxid",
+        "wmdk",
+        "kussin",
+        "oxid",
+        "modules"
+        "gtm",
+        "ga4"
+    ],
+    "homepage":    "https://www.kussin.de/",
+    "license":     [
+        "EULA"
+    ],
+    "authors":     [
+        {
+            "name": "Daniel Kussin",
+            "email": "daniel.kussin@kussin.de",
+            "homepage": "https://www.kussin.de/",
+            "role": "Developer"
+        }
+    ],
+    "extra":       {
+        "oxideshop": {
+            "target-directory": "wmdk/wmdktracking",
+            "source-directory": "modules/wmdk/wmdktracking",
+            "blacklist-filter": [
+                "build/**/*.*",
+                "grunt/**/*.*",
+                "node_modules/**/*.*"
+            ]
+        }
+    },
+    "require":     {
+        "php": ">=5.6"
+    }
+}

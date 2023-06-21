@@ -4,6 +4,8 @@ Integrates [Google Tag Manager (GTM)](https://tagmanager.google.com/) into OXID 
 
 More details of the integration can be found in our Blog [Google Tag Manager x Shopify – E Commerce Datalayer einrichten](https://www.kussin.de/marketing/google-tag-manager-x-shopify-e-commerce-datalayer-einrichten/) (only German).
 
+**NOTICE: :warning: [KUSSIN | GTM Basic Integrator for OXID eShop 6.1.x](https://github.com/kussin/Oxid6GtmBasicIntegratior) is also available.**
+
 ## Requirement
 
 1. OXID eShop Version CE/PE/EE v4.10.x or newer

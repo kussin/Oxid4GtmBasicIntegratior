@@ -26,8 +26,8 @@
     ],
     "extra":       {
         "oxideshop": {
-            "target-directory": "wmdk/wmdktracking",
-            "source-directory": "modules/wmdk/wmdktracking",
+            "target-directory": "wmdk/tracking",
+            "source-directory": "modules/wmdk/tracking",
             "blacklist-filter": [
                 "build/**/*.*",
                 "grunt/**/*.*",

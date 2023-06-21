@@ -1,6 +1,8 @@
 # KUSSIN | GTM Basic Integrator for OXID eShop 4.10.x
 
-Integrates Google Tag Manager
+Integrates [Google Tag Manager (GTM)](https://tagmanager.google.com/) into OXID eShop 4.10.x with Data Layer for `purchase` Event.
+
+More details of the integration can be found in our Blog [Google Tag Manager x Shopify – E Commerce Datalayer einrichten](https://www.kussin.de/marketing/google-tag-manager-x-shopify-e-commerce-datalayer-einrichten/) (only German).
 
 ## Requirement
 
@@ -9,7 +11,10 @@ Integrates Google Tag Manager
 
 ## Installation
 
-Will follow soon.
+1. Upload the contents of the [`copy_this`](copy_this) folder to the root directory of your OXID eShop installation.
+2. Activate the module in the OXID eShop backend under **Extensions > Modules > KUSSIN | GTM Basic Integrator for OXID eShop 4.10.x > Activate**.
+3. Configure the module in the OXID eShop backend under **Extensions > Modules > KUSSIN | GTM Basic Integrator for OXID eShop 4.10.x > Activate > Settings**.
+4. Clear the OXID eShop cache under `/path/to/oxid/tmp/*`.
 
 ## User Guide
 

@@ -2,7 +2,11 @@
 
 ## Module Settings
 
-Will follow soon.
+### GTM Container ID
+
+1. Goto **Extensions > Modules > KUSSIN | GTM Basic Integrator for OXID eShop 4.10.x > Activate > Settings**. 
+2. Add GTM Container ID to the field **GTM Container ID** and save the settings.
+3. Clear the OXID eShop cache under `/path/to/oxid/tmp/*`.
 
 ## Support
 

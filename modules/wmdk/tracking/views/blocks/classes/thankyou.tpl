@@ -1,11 +1,16 @@
 <!-- WMDK::TRACKING['thankyou.tpl'] -->
 
 [{assign var=iOrderNr value=$order->oxorder__oxordernr->value}]
-[{assign var=sOrderEmail value=$order->oxorder__oxbillemail->value}]
-[{assign var=dTotalOrderSum value=$order->oxorder__oxtotalordersum->value}]
 [{assign var=dTotalOrderNetSum value=$order->oxorder__oxtotalnetsum->value}]
 [{assign var=dTotalOrderBrutSum value=$order->oxorder__oxtotalbrutsum->value}]
+[{assign var=dOrderVat value=$dTotalOrderBrutSum-$dTotalOrderNetSum}]
 [{assign var=dOrderDelCost value=$order->oxorder__oxdelcost->value}]
-[{assign var=dOrderPayCost value=$order->oxorder__oxpaycost->value}]
 [{assign var=aOrderdArticles value=$order->getOrderArticles()}]
-[{assign var=sOrderVoucherList value=$order->getOrderVouchers()}]
+
+[{if $order->oxorder__oxcurrency->value != ""}]
+    [{assign var=sOrderCurrency value=$order->oxorder__oxcurrency->value}]
+[{else}]
+    [{assign var=sOrderCurrency value="EUR"}]
+[{/if}]
+
+[{include file="wmdk_google_tag_manager_thankyou.tpl"}]

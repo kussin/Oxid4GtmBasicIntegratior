@@ -11,10 +11,10 @@ $aModule = array(
     'id'           => 'wmdk/tracking',
     'title'        => 'KUSSIN | GTM Basic Integrator for OXID eShop 4.10.x',
     'description'  => array(
-        'de' => 'Fügt den GTM Code inkl. Data Layer zu OXID hinzu.',
-        'en' => 'Adds gtm code incl. data layer to OXID.',
+        'de' => 'Fügt den <a href="https://www.kussin.de/marketing/google-tag-manager-x-shopify-e-commerce-datalayer-einrichten/" target="_blank">GTM Code inkl. Data Layer</a> zu OXID eSales hinzu.',
+        'en' => 'Adds <a href="https://www.kussin.de/marketing/google-tag-manager-x-shopify-e-commerce-datalayer-einrichten/" target="_blank">gtm code incl. data layer</a> to OXID eSales.',
     ),
-    'thumbnail'    => 'thumbnail.jpg',
+    'thumbnail'    => 'module.png',
     'version'      => '0.0.1',
     'author'       => 'Daniel Kussin',
     'url'          => 'https://www.kussin.de',
@@ -45,6 +45,7 @@ $aModule = array(
         // Google Tag Manager
         'wmdk_google_tag_manager_default.tpl' => 'wmdk/tracking/google-tag-manager/default.tpl',
         'wmdk_google_tag_manager_noscript.tpl' => 'wmdk/tracking/google-tag-manager/no-script.tpl',
+        'wmdk_google_tag_manager_thankyou.tpl' => 'wmdk/tracking/google-tag-manager/thankyou.tpl',
     ),
     
     'blocks' => array(
@@ -63,40 +64,9 @@ $aModule = array(
             'block'		=> 'base_js',
             'file' 		=> '/views/blocks/base_js.tpl'
         ),
-
-        'settings' => array(
-            // Consent Manager
-            array('group' => 'sWmdkTrackingCmpSettings', 'name' => 'bWmdkTrackingCmpManualBlocking', 'type' => 'bool', 'value' => 1),
-            array('group' => 'sWmdkTrackingCmpSettings', 'name' => 'aaWmdkTrackingCmpVendorIds', 'type' => 'aarr', 'value' => [
-                'CMP_VENDER_AMAZON' => 's40',
-                'CMP_VENDER_AMAZONCLOUDFRONT' => 's1052',
-                'CMP_VENDER_AWIN' => 's335',
-                'CMP_VENDER_BINGADS' => 's11',
-                'CMP_VENDER_CLOUDFLARE' => 's65',
-                'CMP_VENDER_CMP' => 's24',
-                'CMP_VENDER_CONSENTMANAGER' => 's23',
-                'CMP_VENDER_CRITEO' => '91',
-                'CMP_VENDER_DIANOMI' => '885',
-                'CMP_VENDER_FACEBOOK' => 's7',
-                'CMP_VENDER_GOOGLE' => 's135',
-                'CMP_VENDER_GOOGLEADS' => 's1',
-                'CMP_VENDER_GOOGLEANALYTICS' => 's26',
-                'CMP_VENDER_GOOGLEFONTS' => 's2612',
-                'CMP_VENDER_GTM' => 's905',
-                'CMP_VENDER_INSTAGRAM' => 's14',
-                'CMP_VENDER_KUPONA' => '424',
-                'CMP_VENDER_OMIKRON' => 'c11580',
-                'CMP_VENDER_TECNICA' => 'c29261',
-                'CMP_VENDER_THEREACHGROUP' => '382',
-                'CMP_VENDER_TRUSTEDSHOPS' => 's1432',
-                'CMP_VENDER_VIMEO' => 's77',
-                'CMP_VENDER_WP' => 's2434',
-                'CMP_VENDER_XANDR' => '32',
-                'CMP_VENDER_YOUTUBE' => 's30',
-            ]),
-
-            // Google Tag Manager
-            array('group' => 'sWmdkTrackingGoogleTagManagerSettings', 'name' => 'sWmdkTrackingGoogleTagManagerId', 'type' => 'str', 'value' => 'GTM-KLDD9DE'),
-        )
     ),
+
+    'settings' => array(
+        array('group' => 'sWmdkTrackingGoogleTagManagerSettings', 'name' => 'sWmdkTrackingGoogleTagManagerId', 'type' => 'str', 'value' => 'GTM-KLDD9DE'),
+    )
 );
